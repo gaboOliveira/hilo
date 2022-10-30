@@ -1,5 +1,4 @@
 import { useState, KeyboardEvent, MouseEvent, useEffect } from 'react';
-import './App.css';
 import { Wrapper, Input, Title, RequestNameMessage, StartButton } from './App.styles';
 import { IAttempt, IGame, IUser } from './Models';
 
@@ -67,7 +66,7 @@ function App() {
     }))
   }
 
-  useEffect(() => {console.log(misteryNumber)}, [misteryNumber])
+  useEffect(() => {console.log(user)}, [user])
 
   if (!user){
     return (
