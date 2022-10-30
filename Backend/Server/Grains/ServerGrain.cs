@@ -47,6 +47,7 @@ namespace Server.Grains
 
             playerGame.Attempts++;
             playerGame.IsCompleted = game.MisteryNumber == misteryNumber;
+            playerGame.IsGreater = game.MisteryNumber > misteryNumber;
             return playerGame;
         }
     }

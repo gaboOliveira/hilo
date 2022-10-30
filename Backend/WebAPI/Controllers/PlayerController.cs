@@ -58,7 +58,8 @@ namespace WebAPI.Controllers
             return Ok(new AttemptViewModel 
             { 
                 CorrectAnswer = result.IsCompleted,
-                Attempts = result.Attempts
+                Attempts = result.Attempts,
+                IsGreater = result.IsGreater
             });
         }
     }
